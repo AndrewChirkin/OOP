@@ -1,13 +1,30 @@
 public class Human {
-    private final int yearOfBirth;
+    private int yearOfBirth;
     private final String name;
     private final String town;
     private final String jobTitle;
     public Human(String name, String town, int yearOfBirth, String jobTitle){
-        this.name = name;
-        this.town = town;
-        this.yearOfBirth = yearOfBirth;
-        this.jobTitle = jobTitle;
+
+        if (name == null) {
+            this.name = "Информация не указана";
+        } else {
+            this.name = name;
+        }
+        if (town == null) {
+            this.town = "Информация не указана";
+        }else {
+            this.town = town;
+        }
+
+        if (yearOfBirth < 0) {
+            this.yearOfBirth = Math.abs(yearOfBirth);
+        }
+        if (jobTitle == null) {
+            this.jobTitle = "Инфорация не указана";
+        }else {
+            this.jobTitle = jobTitle;
+        }
+
 
     }
     void greeting(){
