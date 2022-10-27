@@ -8,5 +8,7 @@ public class Main {
         Anna.greeting();
         Kate.greeting();
         Artem.greeting();
+    Human Vladimir = new Human("Владимир","Казань",2001,null);
+    Vladimir.helloVladimir();
     }
 }
