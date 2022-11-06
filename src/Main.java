@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-    Human Maxim = new Human("Максим", "Минск", 1988,"бренд-менеджера");
-    Human Anna = new Human("Аня", "Москва", 1993,"методиста образовательных программ");
-    Human Kate = new Human("Катя", "Калининград", 1992,"продакт-менеджера");
-    Human Artem = new Human("Артём", "Москва", 1995,"директора по развитию бизнеса");
-        Maxim.greeting();
-        Anna.greeting();
-        Kate.greeting();
-        Artem.greeting();
-    Human Vladimir = new Human("Владимир","Казань",2001,null);
-    Vladimir.helloVladimir();
+        Flower Rose = new Flower("Роза", "", "Голландия", 35.59, 0);
+        Flower Chrizo = new Flower("Хризантема", "", "", 15, 5);
+        Flower Pion = new Flower("Пион", "", "", 69.9, 1);
+        Flower Gipsophyla = new Flower("Гипсофила", "", "Турция", 19.5, 10);
+
+        System.out.println(Pion.flowerInfo());
+
     }
+    public static void flowerInfo(){
+        System.out.println(Flower.getName() + ": страна происхождения - " + Flower.getCountry() + ", стоимость - " + getCost() + ", срок стояния цветка - " + getLifeSpan();
+    }
+
 }

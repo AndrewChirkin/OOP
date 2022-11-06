@@ -8,23 +8,18 @@ public class Human {
     private int Age;
 
     public Human(String name, String town, int yearOfBirth, String jobTitle){
+
+    }
+    public Human(String name, String town, int age){
+
     }
 
-    public int getYearOfBirth(){
-        return yearOfBirth;
-    }
-    public void setYearOfBirth() {
-        if (yearOfBirth > 0) {
-            this.yearOfBirth = yearOfBirth;
-        } else {
-            yearOfBirth = 0;
-        }
-    }
     public int setAge(){
         return this.Age = LocalDate.now().getYear() - yearOfBirth;
     }
         public String getName(){
-                return name;
+
+        return name;
             }
         public void setName(String name){
             if(name != null && !name.isEmpty() && !name.isBlank()){
